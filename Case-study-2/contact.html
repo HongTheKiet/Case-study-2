@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keat's Hair Studio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- NavBar -->
+    <header class="header">
+        <div class="container container-nav">
+            <div class="site-title">
+                    <h1>Keat's Hair Studio</h1>
+                    <p class="subtitle">Getting your hair ready</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="current-page">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- End -->
+
+    <!-- Contact -->
+    <main class="contact">
+        <h1>Contact Us</h1>
+        <div class="flex-container">
+            <div class="flex-item-left">
+                <h4>Get In Touch</h4>
+                <p><i class="fa fa-map-marker"></i> 123 abc Colony, xyz City IN
+                </p>
+                <h4>Phone</h4>
+                <p><i class="fa fa-phone"></i> 123-456-7890</p>
+                <h4>Email</h4>
+                <p><i class="fa fa-envelope-o" aria-hidden="true"></i> info@Keatstudio.com</p>
+            </div>
+            <div class="flex-item-right">
+                <form action="">
+                    <label for="customer-name">Your name:</label>
+                    <input type="text" id="fname" placeholder="Your Name">
+                    <label for="stylist-select">Choose your stylist:</label>
+                    <select name="Stylist" id="stylist-select">
+                        <option value="">--Please choose your barber--</option>
+                        <option value="alax-laurie">Alax Laurie (Head Barber)</option>
+                        <option value="tom-keatson">Tom Keatson (Barber)</option>
+                        <option value="billy-turner">Billy Turner (Barber)</option>
+                        <option value="obi-maidu">Obi Maidu (Barber)</option>
+                        <option value="scott-smith">Scott Smith (Barber)</option>
+                    </select>
+                    <label for="Appointment">Enter a date and time for your appointment booking:</label>
+                    <input type="datetime-local" id="appointment" name="appointment-time" value="2022-10-12T08:30">
+                    <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+                    <button type="button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- End -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-row">
+            <div class="footer-left">
+                <h1>Opening Hours</h1>
+                <p><i class="fa fa-clock"></i>Monday to Friday - 8am to 8pm</p>
+                <p><i class="fa fa-clock"></i>Saturday to Sunday - 8am to 5pm</p>
+            </div>
+
+        <div class="social-links">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-youtube"></i>
+        </div>
+        <h3><span id="demo">&copy;</span><a href="#"> Keatstudio.com</a></h3>
+    </footer>
+    <!-- End -->
+
+    <!-- Script -->
+    <script src="js/index.js"></script>
+    <!-- End -->
+</body>
+
+</html>
