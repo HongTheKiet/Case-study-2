@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keat's Hair Studio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -29,20 +30,14 @@
             </nav>
         </div>
     </header>
-    <!-- End -->
-
+    <!-- End -->  
     <!-- Contact -->
     <main class="contact">
         <h1>Contact Us</h1>
         <div class="flex-container">
             <div class="flex-item-left">
-                <h4>Get In Touch</h4>
-                <p><i class="fa fa-map-marker"></i> 123 abc Colony, xyz City IN
-                </p>
-                <h4>Phone</h4>
-                <p><i class="fa fa-phone"></i> 123-456-7890</p>
-                <h4>Email</h4>
-                <p><i class="fa fa-envelope-o" aria-hidden="true"></i> info@Keatstudio.com</p>
+                <h2>Our Place</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501725.3382538554!2d106.41503958350461!3d10.755341073182596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2zSOG7kyBDaMOtIE1pbmgsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1665836593487!5m2!1svi!2s" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="flex-item-right">
                 <form action="">
@@ -68,26 +63,44 @@
     <!-- End -->
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer id="footer-section">
         <div class="footer-row">
             <div class="footer-left">
                 <h1>Opening Hours</h1>
-                <p><i class="fa fa-clock"></i>Monday to Friday - 8am to 8pm</p>
-                <p><i class="fa fa-clock"></i>Saturday to Sunday - 8am to 5pm</p>
+                <p><i id="right-btn" class="fa fa-clock"></i>Monday to Friday 9am to 9pm</p>
+                <p><i id="right-btn" class="fa fa-clock"></i>Sunday to Wednesday 8am to 6pm</p>
             </div>
-
-        <div class="social-links">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-youtube"></i>
+            <div class="footer-right">
+                <h1>Connect With Us</h1>
+                <p>123 Nguyen Trai , P15 , Q8 , Thanh Pho Ho Chi Minh<i id="i-btn" class="fa fa-map-marker"></i></p>
+                <p>xyz@gmail.com <i id="i-btn" class="fa fa-envelope-open"></i></p>
+                <p>
+                    <a id="website" href="index.html" target="_blank">Our Website<i id="i-btn"class="fa fa-globe"></i></a>
+                </p>
+            </div>
         </div>
-        <h3><span id="demo">&copy;</span><a href="#"> Keatstudio.com</a></h3>
+        <div class="social-media">
+            <h1>Follow us</h1>
+            <div class="social-media-links">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-youtube"></i>
+            </div>
+        </div>
     </footer>
     <!-- End -->
 
     <!-- Script -->
-    <script src="js/index.js"></script>
+    <script src="js/index.js">
+        function myMap() {
+        var mapProp= {
+            center:new google.maps.LatLng(51.508742,-0.120850),
+            zoom:5,
+            };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            }
+    </script>
     <!-- End -->
 </body>
 
